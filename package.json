@@ -2,6 +2,9 @@
   "name": "@beardon/magpie-node",
   "version": "0.0.1",
   "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "Commonly-used functions and utilities for Node.js applications",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
