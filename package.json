@@ -1,0 +1,72 @@
+{
+  "name": "@beardon/magpie-node",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "Commonly-used functions and utilities for Node.js applications",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    },
+    "./console": {
+      "import": "./dist/console/index.js"
+    },
+    "./math": {
+      "import": "./dist/math/index.js"
+    },
+    "./sequelize": {
+      "import": "./dist/sequelize/index.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beardon/magpie-node.git"
+  },
+  "keywords": [],
+  "author": "Aaron Bean <aaron.bean@beardon.com> (https://beardon.com)",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/beardon/magpie-node/issues"
+  },
+  "homepage": "https://github.com/beardon/magpie-node#readme",
+  "dependencies": {
+    "lodash": "4.x"
+  },
+  "peerDependencies": {
+    "chalk": "4.x",
+    "change-case": "4.x",
+    "config": "5.x",
+    "luxon": "3.x",
+    "pluralize": "8.x",
+    "sequelize": "6.x",
+    "sequelize-simple-cache": "1.x",
+    "zeddemore-logger": "2.x"
+  },
+  "peerDependenciesMeta": {
+    "chalk": {
+      "optional": true
+    },
+    "change-case": {
+      "optional": true
+    },
+    "config": {
+      "optional": true
+    },
+    "luxon": {
+      "optional": true
+    },
+    "pluralize": {
+      "optional": true
+    },
+    "sequelize": {
+      "optional": true
+    },
+    "sequelize-simple-cache": {
+      "optional": true
+    },
+    "zeddemore-logger": {
+      "optional": true
+    }
+  }
+}
