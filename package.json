@@ -1,12 +1,11 @@
 {
   "name": "@beardon/magpie-node",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "type": "commonjs",
-  "description": "Commonly-used functions and utilities for Node.js applications",
+  "description": "Commonly-used JavaScript libraries for Node.js applications",
   "main": "src/index.js",
   "exports": {
     ".": "./src/index.js",
-    "./package.json": "./package.json",
     "./chalk": "./src/chalk/index.js",
     "./chalk/*": "./src/chalk/*.js",
     "./color": "./src/color/index.js",
@@ -15,11 +14,17 @@
     "./console/*": "./src/console/*.js",
     "./date": "./src/date/index.js",
     "./date/*": "./src/date/*.js",
+    "./enums": "./src/enums.js",
     "./math": "./src/math/index.js",
     "./math/*": "./src/math/*.js",
     "./sequelize": "./src/sequelize/index.js",
-    "./sequelize/*": "./src/sequelize/*.js"
+    "./sequelize/*": "./src/sequelize/*.js",
+    "./package.json": "./package.json"
   },
+  "files": [
+    "src/",
+    "README.md"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/beardon/magpie-node.git"

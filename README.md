@@ -1,3 +1,3 @@
 # magpie-node
 
-Commonly-used functions and utilities for Node.js applications
+Commonly-used JavaScript libraries for Node.js applications
