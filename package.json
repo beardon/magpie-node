@@ -1,6 +1,6 @@
 {
   "name": "@beardon/magpie-node",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "type": "module",
   "publishConfig": {
     "access": "public"
@@ -14,6 +14,9 @@
     },
     "./console": {
       "import": "./dist/console/index.js"
+    },
+    "./date": {
+      "import": "./dist/date/index.js"
     },
     "./math": {
       "import": "./dist/math/index.js"
@@ -34,41 +37,23 @@
   },
   "homepage": "https://github.com/beardon/magpie-node#readme",
   "dependencies": {
-    "lodash": "4.x"
-  },
-  "peerDependencies": {
     "chalk": "4.x",
     "change-case": "4.x",
-    "config": "5.x",
+    "lodash": "4.x",
     "luxon": "3.x",
-    "pluralize": "8.x",
+    "pluralize": "8.x"
+  },
+  "peerDependencies": {
+    "config": "3.x - 5.x",
     "sequelize": "6.x",
     "sequelize-simple-cache": "1.x",
     "zeddemore-logger": "2.x"
   },
   "peerDependenciesMeta": {
-    "chalk": {
-      "optional": true
-    },
-    "change-case": {
-      "optional": true
-    },
-    "config": {
-      "optional": true
-    },
-    "luxon": {
-      "optional": true
-    },
-    "pluralize": {
-      "optional": true
-    },
     "sequelize": {
       "optional": true
     },
     "sequelize-simple-cache": {
-      "optional": true
-    },
-    "zeddemore-logger": {
       "optional": true
     }
   }
