@@ -1,32 +1,31 @@
 {
   "name": "@beardon/magpie-node",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "type": "commonjs",
-  "publishConfig": {
-    "access": "public"
-  },
   "description": "Commonly-used functions and utilities for Node.js applications",
-  "main": "./dist/index.js",
+  "main": "src/index.js",
   "exports": {
-    ".": {
-      "require": "./dist/index.js"
-    },
-    "./console": {
-      "require": "./dist/console/index.js"
-    },
-    "./date": {
-      "require": "./dist/date/index.js"
-    },
-    "./math": {
-      "require": "./dist/math/index.js"
-    },
-    "./sequelize": {
-      "require": "./dist/sequelize/index.js"
-    }
+    ".": "./src/index.js",
+    "./package.json": "./package.json",
+    "./chalk": "./src/chalk/index.js",
+    "./chalk/*": "./src/chalk/*.js",
+    "./color": "./src/color/index.js",
+    "./color/*": "./src/color/*.js",
+    "./console": "./src/console/index.js",
+    "./console/*": "./src/console/*.js",
+    "./date": "./src/date/index.js",
+    "./date/*": "./src/date/*.js",
+    "./math": "./src/math/index.js",
+    "./math/*": "./src/math/*.js",
+    "./sequelize": "./src/sequelize/index.js",
+    "./sequelize/*": "./src/sequelize/*.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/beardon/magpie-node.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [],
   "author": "Aaron Bean <aaron.bean@beardon.com> (https://beardon.com)",

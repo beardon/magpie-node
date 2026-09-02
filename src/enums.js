@@ -377,7 +377,6 @@ module.exports = {
     metricExpiryUnits,
     morganFormats,
     nodeEnvironments,
-    planTypes,
     requestDataMediums,
     requestFieldDataTypes,
     requestSqlOperators,

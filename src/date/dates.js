@@ -324,7 +324,7 @@ module.exports = {
     doDateRangesOverlap,
     doesDateRangeOverlap,
     fiscalYearEnd,
-    fiscalYearEnd,
+    fiscalYearStart,
     forceLuxonDateToTimezone,
     fromNow,
     isStringDate,

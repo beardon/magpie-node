@@ -8,8 +8,8 @@ const { log, winstonLogLevelIdToName } = require('zeddemore-logger');
 const pluralize = require('pluralize');
 const { QueryTypes } = require('sequelize');
 
-const { chalkDatabaseOperations } = require('../console/color');
-const { doesModelUseReturning, isModel } = require('./utils');
+const { chalkDatabaseOperations } = require('../console/chalks');
+const { doesModelUseReturning, isModel } = require('./models');
 const enums = require('../enums');
 
 const { auditFields: af, winstonLogLevels: wll } = enums;
@@ -311,7 +311,7 @@ async function validateSchema(validationOptions, options) {
         for (const column of table.columns) {
             const sql = `SELECT ${ column.name } FROM ${ validation.schema }.${ table.name } LIMIT 1;`;
             try {
-                await _database.query(sql, options);
+                await _database.executeQuery(sql, options);
                 column.valid = true;
             } catch (e) {
                 column.valid = false;

@@ -4,7 +4,7 @@ const _ = require('lodash');
 const { log } = require('zeddemore-logger');
 
 const enums = require('../enums');
-const { queryFirst } = require('./utils');
+const { executeQueryFirst } = require('./queries');
 
 const { winstonLogLevels: wll } = enums;
 
@@ -14,7 +14,7 @@ async function callStoredFunction(sequelize, sql, replacements = null, options) 
     _options.logLevel = !_.isNil(_options.logLevel) ? _options.logLevel : wll.DEBUG;
     const _sql = `${ sql } AS value`;
     try {
-        const result = await queryFirst(sequelize, _sql, { replacements, ..._options });
+        const result = await executeQueryFirst(sequelize, _sql, { replacements, ..._options });
         return (_.isObject(result)) ? result.value : null;
     } catch (e) {
         log(_options).error(e);
